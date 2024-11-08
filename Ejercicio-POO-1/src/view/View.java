@@ -2,6 +2,7 @@ package view;
 
 import controller.ControllerLocal;
 import model.FootWear.FootWear;
+import model.FootWear.FootWearFormal;
 import model.FootWear.FootWearFormalWoman;
 import model.Product;
 import model.enums.DayOfSell;

@@ -11,8 +11,6 @@ public abstract class FootWearFormal extends FootWear {
     protected String color;
     public abstract Double getDiscount();
 
-
-
     protected FootWearFormal(Product product,
                              DayOfSell dayOfSell,
                              Double numberOfFootWear,

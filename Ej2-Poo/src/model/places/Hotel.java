@@ -25,4 +25,16 @@ public class Hotel extends Hostel{
 
         return 0.0;
     }
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "Incluye desayuno=" + includeBreakfast +
+                ", Es fumador=" + isSmoker +
+                ", Valor por noche=" + valueOfNight +
+                ", Cantidad de personas=" + quantityOfPersons +
+                ", Tipo de temporada=" + typeOfTemporate +
+                ", Cantidad de noches=" + quantityOfNights +
+                '}';
+    }
 }

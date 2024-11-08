@@ -14,4 +14,15 @@ public class Tent extends Hostel{
     public Double getCancelValue() {
         return this.getSubTotal() - this.getDiscountVoucher();
     }
+
+    @Override
+    public String toString() {
+        return "Carpa{" +
+                "Es fumador=" + isSmoker +
+                ", Valor por noche=" + valueOfNight +
+                ", Cantidad de personas=" + quantityOfPersons +
+                ", Tipo de temporada=" + typeOfTemporate +
+                ", Cantidad de noches=" + quantityOfNights +
+                '}';
+    }
 }

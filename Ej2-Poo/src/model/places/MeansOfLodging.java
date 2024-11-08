@@ -42,7 +42,7 @@ public abstract class MeansOfLodging {
         return valueOfNight;
     }
 
-    public void setValueOfNight(Double valueOfNight) {
+    protected void setValueOfNight(Double valueOfNight) {
         this.valueOfNight = valueOfNight;
     }
 
@@ -50,7 +50,7 @@ public abstract class MeansOfLodging {
         return quantityOfPersons;
     }
 
-    public void setQuantityOfPersons(int quantityOfPersons) {
+    protected void setQuantityOfPersons(int quantityOfPersons) {
         this.quantityOfPersons = quantityOfPersons;
     }
 
@@ -58,7 +58,7 @@ public abstract class MeansOfLodging {
         return client;
     }
 
-    public void setClient(Client client) {
+    protected void setClient(Client client) {
         this.client = client;
     }
 
@@ -66,7 +66,7 @@ public abstract class MeansOfLodging {
         return typeOfTemporate;
     }
 
-    public void setTypeOfTemporate(TypeOfTemporate typeOfTemporate) {
+    protected void setTypeOfTemporate(TypeOfTemporate typeOfTemporate) {
         this.typeOfTemporate = typeOfTemporate;
     }
 
@@ -74,7 +74,7 @@ public abstract class MeansOfLodging {
         return quantityOfNights;
     }
 
-    public void setQuantityOfNights(int quantityOfNights) {
+    protected void setQuantityOfNights(int quantityOfNights) {
         this.quantityOfNights = quantityOfNights;
     }
 }

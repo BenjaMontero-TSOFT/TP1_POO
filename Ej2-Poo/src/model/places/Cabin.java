@@ -13,14 +13,27 @@ public class Cabin extends MeansOfLodging{
         this.firePlace = firePlace;
     }
 
-    public void incrementBaseValue(){
+    public boolean incrementBaseValue(){
         if(this.quantityOfPersons > 5){
             this.setValueOfNight(this.getValueOfNight() + ((this.getValueOfNight() * 18/100)));
+            return true;
         }
+        return false;
     }
 
     @Override
     public Double getCancelValue() {
         return this.getSubTotal() - this.getDiscountVoucher();
+    }
+
+    @Override
+    public String toString() {
+        return "Cabin{" +
+                "Chimenea=" + firePlace +
+                ", Valor por noche=" + valueOfNight +
+                ", Cantidad de personas=" + quantityOfPersons +
+                ", Tipo de temporada=" + typeOfTemporate +
+                ", Cantidad de noches=" + quantityOfNights +
+                '}';
     }
 }
